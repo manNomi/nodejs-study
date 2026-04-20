@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/web_page/test.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="articleContain" action="/router/article/upload" enctype="multipart/form-data"  method="post">
+        <input id="title" placeholder="글 제목">
+        <textarea id="content" placeholder="글 내용">
+        </textarea>
+
+        <div id="imgArea">
+        </div>
+
+        <div id="btnArea">
+            <label id="attachBtn" className="input-file-button" for="attach"></label>
+            <input type="file" accept="image/*" multiple id="attach" style="display: none;" onchange="processImg()"></button>
+            <input type="submit" id="writeBtn"></button>
+        </div>
+    </form>
+    <script src="../../js/web_page/test.js"></script>
+</body>
+</html>

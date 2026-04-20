@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <div id = "myBanner">
+        <div id="menu" onclick="HideMyBannerEvent()">X</div>
+        <span id="loginText">로그인하셔야합니다.</span>
+        
+        <div id="loginSeg">
+            <div>
+                <input type="text" class="loginInput">
+                <input type="password" class="loginInput">
+            </div>
+            <input type="button" id="loginBtn" value="로그인" onclick="loginEvent()"></span>
+        </div>
+
+        <div id="userSector">
+            
+        </div>
+
+        <div id="logout" onclick="logoutEvent()">로그아웃</div>
+    </div>
+
+    <nav onmouseleave="HideWideNavEvent()">
+        <span id="goMain" onclick="GoEvent(-1)"></span>
+        <span id="introduceBtn" class="navBtn" onmouseover="ShowWideNavEvent(this)" onmouseout="HideSvgEvent(this, 0)">자기소개</span>
+        <span id="hwBtn" class="navBtn" onmouseover="ShowWideNavEvent(this)" onmouseout="HideSvgEvent(this, 0)">과제들 </span>
+        <span id="boardBtn" class="navBtn" onmouseover="ShowWideNavEvent(this)" onmouseout="HideSvgEvent(this, 0)">게시판</span>
+        
+        <div id="fullSelectArea">
+            <div class="fullSelectSeg"  onmouseover="ShowSvgEvent(this, 1)" onmouseout="HideSvgEvent(this, 1)">
+                <div class="svgContain">
+                    
+                </div>
+                <div class="fullBtn">자기소개</div>
+            </div>
+            
+            <div class="fullSelectSeg" onmouseover="ShowSvgEvent(this, 1)" onmouseout="HideSvgEvent(this, 1)">
+                <div class="svgContain">
+                    <p id="hwBtnLine" class="btnLine"></p>
+                    <svg id="hwBtnSvgTri" class="svgTri">
+                        <path d="M 10 10 L 20 0 L 0 0"></path>
+                    </svg>
+                </div>
+                <div class="fullBtn">컴퓨터 견적</div>
+                <div class="fullBtn">유튜브</div>
+                <div class="fullBtn">숫자야구</div>
+                <div class="fullBtn">사진퍼즐</div>
+            </div>
+            <div class="fullSelectSeg fullSelectSegEnd" onmouseover="ShowSvgEvent(this, 1)" onmouseout="HideSvgEvent(this, 1)">
+                <div class="svgContain">
+                    <p id="boardBtnLine" class="btnLine"></p>
+                    <svg id="hwBtnSvgTri" class="svgTri">
+                        <path d="M 10 10 L 20 0 L 0 0"></path>
+                    </svg>
+                </div>
+                <div class="fullBtn" onclick="goBoardEvent(`Freeboard`)">자유게시판</div>
+            </div>
+        </div>
+       
+        <div id="menu" onclick="ShowMyBannerEvent()">=</div>
+        
+    </nav>
+
+    <div id="contain" class="banner">
+        <article id="art0" class="art">
+            <h1>자기소개</h1>
+        </article>
+
+        <article id="art1" class="art">
+            <h1>컴퓨터 견적</h1>
+        </article>
+
+        <article id="art2" class="art">
+            <h1>유튜브</h1>
+        </article>
+
+        <article id="art3" class="art">
+            <h1>숫자야구</h1>
+        </article>
+
+        <article id="art4" class="art">
+            <h1>사진퍼즐</h1>
+        </article>
+
+        <div id="bg"></div>
+    </div>
+
+    <div id="timerBar" class="effect"></div>
+    <div id="emptyBar"></div>
+
+    <script src="/js/index.js"></script>
+    <script src="/js/web_page/banner.js"></script>
+</body>
+</html>

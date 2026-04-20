@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
+    <title>메인페이지</title>
+</head>
+<body>
+    <div class = "searchBox">
+        <input id="textBox" maxlength="100">
+        <div class = "goBtn" onclick="goSearchEvent()">
+            검색
+        </div>
+    </div>
+    <div class = "historyBox">
+        <span>
+            최근검색어
+        </span>
+        <span id = "history0" class="history">
+        </span>
+        <span id = "history1" class="history">
+        </span>
+        <span id = "history2" class="history">
+        </span>
+        <span id = "history3" class="history">
+        </span>
+        <span id = "history4" class="history">
+        </span>
+    </div>
+
+    <div id="loginBox">
+    </div>
+
+    <div class="currentUsrCnt">
+        <span class="cUCText">1시간 내 접속자 수</span>
+        <span id="cUCCnt"></span>
+    </div>
+
+
+    <script src="/js/index.js"></script>
+</body>
+</html>

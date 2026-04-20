@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/web_page/free_board.css">
+    <title>자유게시판</title>
+</head>
+<body>
+    <main>
+        <h1>자유게시판</h1>
+        <input id="writeBtn" type="button" value="글쓰기" onclick="GoWriteEvent()">
+        <div id = "writeArea">
+
+        </div>
+        <table id="table">
+           <thead>
+                <tr>
+                    <td class="col0">
+                        번호
+                    </td>
+                    <td class="col1">
+                        제목
+                    </td>
+                    <td class="col2">
+                        글쓴이
+                    </td>
+                    <td class="col3">
+                        작성일
+                    </td>
+                    <td class="col4">
+                        조회
+                    </td>
+                </tr>
+           </thead>
+           <tr onclick="ReadArticleEvent()">
+                <td class="col0">
+                    0
+                </td>
+                <td class="col1">
+                    test
+                </td>
+                <td class="col2">
+                    test
+                </td>
+                <td class="col3">
+                    2023/06/28
+                </td>
+                <td class="col4">
+                    1
+                </td>
+            </tr>
+        </table>
+    </main>
+
+    <script src="../../js/web_page/free_board.js"></script>
+</body>
+</html>

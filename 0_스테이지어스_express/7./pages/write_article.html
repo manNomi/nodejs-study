@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/web_page/write_article.css">
+    <title>Document</title>
+</head>
+<body>
+    <form id="articleContain" name="articleForm" action="/article/Freeboard" enctype="multipart/form-data"  method="post">
+        <input name="title" id="title" placeholder="글 제목">
+        
+        <textarea name="content" id="content" placeholder="글 내용">
+        </textarea>
+
+        <div id="imgArea">
+        </div>
+
+        <div id="btnArea">
+            <label id="attachBtn" className="input-file-button" for="attach"></label>
+            <input type="file" name = "img" accept="image/*" multiple id="attach" style="display: none;" onchange="processImg()">
+            <input type="submit" id="writeBtn" value="">
+        </div>
+    </form>
+    <script src="/js/web_page/test.js"></script>
+</body>
+</html>
